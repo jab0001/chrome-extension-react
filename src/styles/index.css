@@ -1,0 +1,203 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* @font-face {
+    font-family: SF UI Display;
+    src: url('../static/fonts/SFUIDisplay-Black.eot') format('eot'),
+        url('../static/fonts/SFUIDisplay-Black.woff') format('woff'),
+        url('../static/fonts/SFUIDisplay-Black.woff') format('ttf'),
+        url('../static/fonts/SFUIDisplay-Black.woff2') format('woff2');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: SF UI Display;
+    src: url('../static/fonts/SFUIDisplay-Bold.eot') format('eot'),
+        url('../static/fonts/SFUIDisplay-Bold.woff') format('woff'),
+        url('../static/fonts/SFUIDisplay-Bold.woff') format('ttf'),
+        url('../static/fonts/SFUIDisplay-Bold.woff2') format('woff2');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: SF UI Display;
+    src: url('../static/fonts/SFUIDisplay-Heavy.eot') format('eot'),
+        url('../static/fonts/SFUIDisplay-Heavy.woff') format('woff'),
+        url('../static/fonts/SFUIDisplay-Heavy.woff') format('ttf'),
+        url('../static/fonts/SFUIDisplay-Heavy.woff2') format('woff2');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: SF UI Display;
+    src: url('../static/fonts/SFUIDisplay-Light.eot') format('eot'),
+        url('../static/fonts/SFUIDisplay-Light.woff') format('woff'),
+        url('../static/fonts/SFUIDisplay-Light.woff') format('ttf'),
+        url('../static/fonts/SFUIDisplay-Light.woff2') format('woff2');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: SF UI Display;
+    src: url('../static/fonts/SFUIDisplay-Medium.eot') format('eot'),
+        url('../static/fonts/SFUIDisplay-Medium.woff') format('woff'),
+        url('../static/fonts/SFUIDisplay-Medium.woff') format('ttf'),
+        url('../static/fonts/SFUIDisplay-Medium.woff2') format('woff2');
+    font-weight: normal;
+} */
+
+@font-face {
+    font-family: SF UI Display;
+    src: url('../static/fonts/SFUIDisplay-Regular.eot') format('eot'),
+        url('../static/fonts/SFUIDisplay-Regular.woff') format('woff'),
+        url('../static/fonts/SFUIDisplay-Regular.ttf') format('ttf'),
+        url('../static/fonts/SFUIDisplay-Regular.woff2') format('woff2');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: SF UI Display;
+    src: url('../static/fonts/SFUIDisplay-Bold.eot') format('eot'),
+        url('../static/fonts/SFUIDisplay-Bold.woff') format('woff'),
+        url('../static/fonts/SFUIDisplay-Bold.ttf') format('ttf'),
+        url('../static/fonts/SFUIDisplay-Bold.woff2') format('woff2');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Ruberoid;
+    src: url('../static/fonts/Ruberoid-Regular.otf') format('opentype');
+    font-weight: normal;
+}
+
+/* 
+@font-face {
+    font-family: SF UI Display;
+    src: url('../static/fonts/SFUIDisplay-Semibold.eot') format('eot'),
+        url('../static/fonts/SFUIDisplay-Semibold.woff') format('woff'),
+        url('../static/fonts/SFUIDisplay-Semibold.woff') format('ttf'),
+        url('../static/fonts/SFUIDisplay-Semibold.woff2') format('woff2');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: SF UI Display;
+    src: url('../static/fonts/SFUIDisplay-Thin.eot') format('eot'),
+        url('../static/fonts/SFUIDisplay-Thin.woff') format('woff'),
+        url('../static/fonts/SFUIDisplay-Thin.woff') format('ttf'),
+        url('../static/fonts/SFUIDisplay-Thin.woff2') format('woff2');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: SF UI Display;
+    src: url('../static/fonts/SFUIDisplay-Ultralight.eot') format('eot'),
+        url('../static/fonts/SFUIDisplay-Ultralight.woff') format('woff'),
+        url('../static/fonts/SFUIDisplay-Ultralight.woff') format('ttf'),
+        url('../static/fonts/SFUIDisplay-Ultralight.woff2') format('woff2');
+    font-weight: normal;
+} */
+
+.item {
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    line-height: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.parent-flg blockquote,
+button,
+dd,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+input,
+lengend,
+li,
+ol,
+p,
+div,
+pre,
+td,
+textarea,
+th,
+span,
+ul {
+    font-family: "SF UI Display";
+}
+
+
+.skeleton-bg {
+    background: linear-gradient(130deg, #3d3d3d, #ffffff, #656565);
+    background-size: 200% 200%;
+    -webkit-animation: Animation 5s ease infinite;
+    -moz-animation: Animation 5s ease infinite;
+    animation: Animation 5s ease infinite;
+}
+
+@-webkit-keyframes Animation {
+    0% {
+        background-position: 10% 0%
+    }
+
+    50% {
+        background-position: 91% 100%
+    }
+
+    100% {
+        background-position: 10% 0%
+    }
+}
+
+@-moz-keyframes Animation {
+    0% {
+        background-position: 10% 0%
+    }
+
+    50% {
+        background-position: 91% 100%
+    }
+
+    100% {
+        background-position: 10% 0%
+    }
+}
+
+@keyframes Animation {
+    0% {
+        background-position: 10% 0%
+    }
+
+    50% {
+        background-position: 91% 100%
+    }
+
+    100% {
+        background-position: 10% 0%
+    }
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #FADD56
+}
